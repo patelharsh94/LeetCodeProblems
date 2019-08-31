@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="96a7a9e8-6f5e-4b04-8648-3900dc8461ff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Leet/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Leet/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Leet/NumberOfOccurances.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Leet/NumberOfOccurances.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NumberOfOccurances.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NumberOfOccurances.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,22 +14,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-              <folding>
-                <marker date="1567272512860" expanded="true" signature="823:1131" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NumberOfOccurances.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+            <state>
+              <caret column="19" selection-start-column="19" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -70,6 +54,7 @@
         <option value="$PROJECT_DIR$/src/MostProfitAssigningWork.java" />
         <option value="$PROJECT_DIR$/src/NumberOfOccurances.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -83,7 +68,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -100,11 +85,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567274396967" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567275225455" />
     <property name="last_opened_file_path" value="/Applications/IntelliJ IDEA CE.app" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -149,6 +134,21 @@
       <option name="presentableId" value="Default" />
       <updated>1565841758328</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial import">
+      <created>1567274418227</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1567274418227</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial import">
+      <created>1567274428580</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1567274428580</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -162,8 +162,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2746781" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28540772" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -177,9 +178,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.28540772" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.28540772" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.7145923" side_tool="true" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -222,7 +223,7 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
-        <entry key="MAIN">
+        <entry key="1">
           <value>
             <State>
               <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -240,6 +241,41 @@
                 </list>
               </option>
             </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="BEK_SORT_TYPE" value="1" />
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
           </value>
         </entry>
       </map>
@@ -386,20 +422,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/NumberOfOccurances.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
+        <state relative-caret-position="480">
           <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+        <state relative-caret-position="420">
+          <caret line="36" lean-forward="true" selection-start-line="4" selection-start-column="43" selection-end-line="36" />
           <folding>
             <marker date="1567272512860" expanded="true" signature="823:1131" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
