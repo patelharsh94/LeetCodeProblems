@@ -1,5 +1,5 @@
 import java.util.HashSet;
-
+// 128. Longest Consecutive Sequence
 public class LongestConsecutiveSequence {
 
     public int longestConsecutive(int[] nums) {
