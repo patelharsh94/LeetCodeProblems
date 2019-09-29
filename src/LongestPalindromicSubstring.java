@@ -47,7 +47,6 @@ public class LongestPalindromicSubstring {
     public String longestPalindrome(String s) {
 
         int currPalindromLength = s.length();
-        String currMaxPalindrome = "";
         String currPalindrome;
 
         if (s.length() == 2 && s.charAt(0) == s.charAt(1))
@@ -68,7 +67,7 @@ public class LongestPalindromicSubstring {
 
 
 
-        return currMaxPalindrome.length() == 0  ? s.charAt(0) + "" : currMaxPalindrome;
+        return "";
     }
 
 }
