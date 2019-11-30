@@ -65,8 +65,6 @@ public class LongestPalindromicSubstring {
             currPalindromLength--;
         }
 
-
-
         return "";
     }
 
