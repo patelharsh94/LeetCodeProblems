@@ -14,28 +14,27 @@ public class Subsets {
     public List<List<Integer>> subsets(int[] nums) {
 
         List<List<Integer>> subsets = new ArrayList<>();
-        List<Integer> numList = new ArrayList<>();
-        for (int num : nums) {
-            numList.add(num);
-        }
-
-        System.out.println(numList);
-
-        for (int i = 0; i < nums.length; i++) {
-
-            List<Integer> currSet = new ArrayList<>();
-
-            for (int j = i+1; j < nums.length - i; j++) {
-                currSet.addAll(numList.subList(i, j));
-            }
-
-            subsets.add(currSet);
-            currSet = new ArrayList<>();
-        }
-
-        System.out.println(subsets);
+        subsets.add(new ArrayList<>());
+        subsets = getSubsetsRecurse(subsets, new ArrayList<>(), nums, 0);
 
         return subsets;
+    }
+
+    public List<List<Integer>> getSubsetsRecurse(List<List<Integer>> totalSubsets, List<Integer> currSubset, int[] nums, int index) {
+
+        List<Integer> newSubset = new ArrayList<>();
+        newSubset.addAll(currSubset);
+
+        while (index < nums.length) {
+            newSubset.add(nums[index]);
+            totalSubsets.add(newSubset);
+            getSubsetsRecurse(totalSubsets, newSubset, nums, index+1);
+            newSubset = new ArrayList<>();
+            newSubset.addAll(currSubset);
+            index++;
+        }
+
+        return totalSubsets;
     }
 
 }
