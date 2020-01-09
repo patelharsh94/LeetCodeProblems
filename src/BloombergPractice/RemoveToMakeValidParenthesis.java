@@ -2,46 +2,49 @@ package BloombergPractice;
 
 import java.util.Stack;
 
+// 1249. Minimum Remove to Make Valid Parentheses
+
 public class RemoveToMakeValidParenthesis {
+
+    class ParenthesisLocation {
+        char c;
+        int index;
+
+        ParenthesisLocation(char c, int i) {
+            this.c = c;
+            this.index = i;
+        }
+
+    }
 
     public String minRemoveToMakeValid(String s) {
 
-        Stack<Character> parenthesisStack = new Stack<>();
+        Stack<ParenthesisLocation> parenthesisStack = new Stack<>();
         StringBuilder sb = new StringBuilder(s);
 
-        int i = 0;
+        for (int i = 0; i < sb.length(); i++) {
 
-        for (char c : s.toCharArray()) {
-
+            char c = sb.charAt(i);
             if (c == '(') {
-                parenthesisStack.add(c);
+                parenthesisStack.add(new ParenthesisLocation(c, i));
             }
 
             if (c == ')' && !parenthesisStack.empty()) {
                 parenthesisStack.pop();
             } else if (c == ')' && parenthesisStack.empty()) {
                 sb.replace(i, i+1, "");
-            }
-            i++;
-        }
-
-
-        if (!parenthesisStack.empty()) {
-            i = 0;
-            s = sb.toString();
-            for (char c : s.toCharArray()) {
-
-                if (!parenthesisStack.empty() && c == '(') {
-                    parenthesisStack.pop();
-                    sb.replace(i, i+1, "");
-                    i--;
-                }
-                i++;
+                i--;
             }
         }
 
+        while (!parenthesisStack.empty()) {
+            sb.setCharAt(parenthesisStack.pop().index, '*');
+        }
 
-        return sb.toString();
+        String finalStr = sb.toString();
+        finalStr = finalStr.replaceAll("\\*", "");
+
+        return finalStr;
     }
 
 }
