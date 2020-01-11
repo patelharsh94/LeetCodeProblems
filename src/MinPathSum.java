@@ -1,7 +1,7 @@
 import java.util.PriorityQueue;
 import java.util.Queue;
 
-public class MinimumPathSum {
+public class MinPathSum {
 
     class Index {
         int x;
