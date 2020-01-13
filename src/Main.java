@@ -10,8 +10,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        RemoveToMakeValidParenthesis removeToMakeValidParenthesis = new RemoveToMakeValidParenthesis();
-        System.out.println(removeToMakeValidParenthesis.minRemoveToMakeValid("())()((("));
+        RegularExpressionMatching regularExpressionMatching = new RegularExpressionMatching();
+        regularExpressionMatching.isMatch("aaabbcddef", "a*b..d*e.");
     }
 }
 
