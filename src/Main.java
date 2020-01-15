@@ -10,8 +10,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        RegularExpressionMatching regularExpressionMatching = new RegularExpressionMatching();
-        regularExpressionMatching.isMatch("aaabbcddef", "a*b..d*e.");
+        KthGrammer kthGrammer = new KthGrammer();
+        System.out.println(kthGrammer.kthGrammar(4,5));
     }
 }
 
