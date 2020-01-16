@@ -1,32 +1,16 @@
 public class KthGrammer {
 
-    public String getBinaryOpposite(String curr) {
-
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < curr.length(); i++) {
-            if (curr.charAt(i) == '0')
-                sb.append(1);
-            else
-                sb.append(0);
-        }
-
-        return sb.toString();
-    }
-
     public int kthGrammar(int N, int K) {
+        N--; K--;
+        boolean isOdd = false;
 
-        if (N == 0) {
-            return 0;
+        while (N > 0) {
+            isOdd = (K % 2 == 0) == isOdd;
+            K /= 2;
+            N--;
         }
 
-        StringBuilder sbFinal = new StringBuilder("01");
-
-        for (int i = 0; i < N/2; i++) {
-            sbFinal.append(getBinaryOpposite(sbFinal.toString()));
-            System.out.println(sbFinal.toString());
-        }
-
-        return sbFinal.charAt(K-1) - 48;
+        return isOdd ? 1 : 0;
     }
 
 
