@@ -10,8 +10,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        KthGrammer kthGrammer = new KthGrammer();
-        System.out.println(kthGrammer.kthGrammar(4,5));
+        TwoSum2 twoSum2 = new TwoSum2();
+        int [] nums = {-1, 0};
+        int target = -1;
+
+        twoSum2.twoSum(nums, target);
     }
 }
 
