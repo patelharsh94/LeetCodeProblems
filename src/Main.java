@@ -1,20 +1,35 @@
-import BloombergPractice.RandomizedSet;
-import BloombergPractice.RemoveToMakeValidParenthesis;
-import BloombergPractice.Subsets;
-import BloombergPractice.TwoCitySchedulingCost;
-import DataStructuresAndAlgoImplementations.MergeSort;
 
-import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        TwoSum2 twoSum2 = new TwoSum2();
-        int [] nums = {-1, 0};
-        int target = -1;
+        ListNode node1 = new ListNode(3);
+        ListNode node2 = new ListNode(2);
+        ListNode node3 = new ListNode(3);
+//        ListNode node4 = new ListNode(4);
+//        ListNode node5 = new ListNode(4);
+//        ListNode node6 = new ListNode(5);
+//        ListNode node7 = new ListNode(6);
+//        ListNode node8 = new ListNode(7);
+//        ListNode node9 = new ListNode(7);
+//        ListNode node10 = new ListNode(8);
+//        ListNode node11 = new ListNode(0);
 
-        twoSum2.twoSum(nums, target);
+//        node1.next = node2;
+        node2.next = node1;
+//        node3.next = node4;
+//        node4.next = node5;
+//        node5.next = node6;
+//        node6.next = node10;
+//        node10.next = node11;
+//
+//        node7.next = node8;
+//        node8.next = node9;
+//        node9.next = node3;
+
+        TwoLinkedList twoLinkedList = new TwoLinkedList();
+        twoLinkedList.getIntersectionNode(node1, node2);
     }
 }
 
