@@ -1,12 +1,5 @@
 // #112 : find if the tree has nodes whose value adds up to the number given.
 
-class TreeNode {
-      int val;
-      TreeNode left;
-      TreeNode right;
-      TreeNode(int x) { val = x;}
-}
-
 public class PathSum {
 
     public boolean hasPathSum(TreeNode root, int sum) {

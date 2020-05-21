@@ -1,4 +1,4 @@
-package DataStructuresAndAlgoImplementations;
+package Algorithms;
 
 public class MergeSort {
 
