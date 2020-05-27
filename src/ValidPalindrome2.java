@@ -1,7 +1,7 @@
 import org.junit.Test;
 
 // 680. Valid Palindrome II
-public class ValidPalindrome {
+public class ValidPalindrome2 {
 
     public boolean validPalindrome(String s) {
 
