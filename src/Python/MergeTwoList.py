@@ -98,4 +98,50 @@ def testLinkedListCycle():
     return False
 
 
+def mergeList(l1, l2):
 
+    if l1.val < l2.val:
+        main = l1
+        inj = l2
+    else:
+        main = l2
+        inj = l1
+
+    main_a = main
+    inj_b = inj
+
+    while inj_b:
+
+        if not main_a.next or main_a.val <= inj_b.val < main_a.next.val:
+            tmp = main_a.next
+            tmp2 = inj_b.next
+            main_a.next = inj_b
+            inj_b.next = tmp
+            inj_b = tmp2
+
+        main_a = main_a.next
+
+    return main
+
+
+def mergeKLists(lists):
+
+    if not lists or len(lists) == 0:
+        return None
+
+    finalList = lists[0]
+
+    for i in range(1, len(lists)):
+        finalList = mergeList(finalList, lists[i])
+
+    return finalList
+
+def testMergeLists():
+    alllists = [[1,2,4],[1,3,5],[3,6]]
+    l1 = buildList(alllists[0])
+    l2 = buildList(alllists[1])
+    l3 = buildList(alllists[2])
+
+    lists = [l1, l2, l3]
+
+    mergeKLists(lists)
